@@ -86,11 +86,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="game status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9v-mY-k43">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="game status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9v-mY-k43">
                                         <rect key="frame" x="0.0" y="84.333333333333343" width="80" height="15.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" value="YES">
+                                                <string key="keyPath">.layer.masksToBounds = true
+label.layer.masksToBounds = truelabel.layer.masksToBounds = true
+label.layer.masksToBounds</string>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath=".layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -124,8 +135,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-kM-Yxi">
-                                <rect key="frame" x="0.0" y="205" width="390" height="20.333333333333332"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-kM-Yxi">
+                                <rect key="frame" x="0.0" y="219.66666666666666" width="390" height="20.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2r-zG-jks">
                                         <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="20.333333333333332"/>
@@ -153,34 +164,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cp2-li-9Y9">
-                                <rect key="frame" x="0.0" y="241" width="390" height="35"/>
+                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cp2-li-9Y9">
+                                <rect key="frame" x="0.0" y="240" width="390" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5Q-fh-BWX">
-                                        <rect key="frame" x="0.0" y="0.0" width="78" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="38"/>
                                         <state key="normal" title="Button" image="ballicon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-ep-kOX">
-                                        <rect key="frame" x="78" y="0.0" width="78" height="35"/>
+                                        <rect key="frame" x="84" y="0.0" width="54" height="38"/>
                                         <state key="normal" image="picChartIcon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-v6-d5t">
-                                        <rect key="frame" x="156" y="0.0" width="78" height="35"/>
+                                        <rect key="frame" x="168" y="0.0" width="54" height="38"/>
                                         <state key="normal" image="soccerIcon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyY-59-D5t">
-                                        <rect key="frame" x="234" y="0.0" width="78" height="35"/>
+                                        <rect key="frame" x="252" y="0.0" width="54" height="38"/>
                                         <state key="normal" image="cameraIcon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRj-Jc-k0e">
-                                        <rect key="frame" x="312" y="0.0" width="78" height="35"/>
+                                        <rect key="frame" x="336" y="0.0" width="54" height="38"/>
                                         <state key="normal" image="rank"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ERx-ke-b09"/>
-                                    <constraint firstItem="y5Q-fh-BWX" firstAttribute="centerY" secondItem="cp2-li-9Y9" secondAttribute="centerY" id="TM9-Vb-02R"/>
+                                    <constraint firstAttribute="height" constant="38" id="ERx-ke-b09"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -193,6 +203,7 @@
                             <constraint firstItem="FbN-id-jGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GxF-bH-vBd"/>
                             <constraint firstItem="FeC-ck-9LH" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="trailing" multiplier="0.75" id="HZU-ET-HZp"/>
                             <constraint firstItem="cp2-li-9Y9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JVH-1u-1TU"/>
+                            <constraint firstItem="cp2-li-9Y9" firstAttribute="top" secondItem="FbN-id-jGb" secondAttribute="bottom" id="OjH-Wj-BI2"/>
                             <constraint firstItem="Fh8-L7-RhP" firstAttribute="leading" secondItem="FbN-id-jGb" secondAttribute="leading" id="UnG-if-bYf"/>
                             <constraint firstItem="M9M-HT-5ch" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="trailing" multiplier="0.25" id="XHI-gu-tli"/>
                             <constraint firstItem="FeC-ck-9LH" firstAttribute="centerY" secondItem="FbN-id-jGb" secondAttribute="centerY" id="fiF-rY-5DA"/>
@@ -201,6 +212,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cp2-li-9Y9" secondAttribute="trailing" id="nbW-sn-Z8s"/>
                             <constraint firstItem="uWF-IF-NTK" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="centerX" id="rXb-Ml-EJL"/>
                             <constraint firstItem="Xxk-tJ-vN8" firstAttribute="trailing" secondItem="FbN-id-jGb" secondAttribute="trailing" id="rcu-tS-pfA"/>
+                            <constraint firstItem="FEG-kM-Yxi" firstAttribute="bottom" secondItem="FbN-id-jGb" secondAttribute="bottom" id="uKp-IJ-l9d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FEG-kM-Yxi" secondAttribute="trailing" id="ukh-pp-Ahn"/>
                             <constraint firstItem="M9M-HT-5ch" firstAttribute="centerY" secondItem="FbN-id-jGb" secondAttribute="centerY" id="y68-fT-dTA"/>
                         </constraints>
@@ -228,6 +240,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
