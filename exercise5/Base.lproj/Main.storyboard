@@ -74,19 +74,22 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-IF-NTK">
                                 <rect key="frame" x="155" y="70" width="80" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnE-21-bej">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnE-21-bej">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="sAQ-Lx-n4H"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q38-Fw-SUH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q38-Fw-SUH">
                                         <rect key="frame" x="0.0" y="51" width="80" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="game status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9v-mY-k43">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9v-mY-k43">
                                         <rect key="frame" x="0.0" y="84.333333333333343" width="80" height="15.666666666666671"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -109,19 +112,16 @@ label.layer.masksToBounds</string>
                                     <constraint firstItem="u9v-mY-k43" firstAttribute="centerX" secondItem="uWF-IF-NTK" secondAttribute="centerX" id="GOn-tg-7sE"/>
                                     <constraint firstItem="q38-Fw-SUH" firstAttribute="centerX" secondItem="uWF-IF-NTK" secondAttribute="centerX" id="KX5-eC-Itf"/>
                                     <constraint firstItem="tnE-21-bej" firstAttribute="centerX" secondItem="uWF-IF-NTK" secondAttribute="centerX" id="OWp-BU-HUT"/>
-                                    <constraint firstItem="q38-Fw-SUH" firstAttribute="top" secondItem="tnE-21-bej" secondAttribute="bottom" constant="5" id="Pea-SV-Rhd"/>
                                     <constraint firstAttribute="width" constant="80" id="ZRs-Lg-Roh"/>
-                                    <constraint firstItem="q38-Fw-SUH" firstAttribute="top" secondItem="tnE-21-bej" secondAttribute="bottom" constant="13" id="hDv-BV-1UO"/>
-                                    <constraint firstItem="tnE-21-bej" firstAttribute="top" secondItem="uWF-IF-NTK" secondAttribute="top" constant="2" id="y2F-7r-CfI"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-L7-RhP">
-                                <rect key="frame" x="29" y="26" width="20" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-L7-RhP">
+                                <rect key="frame" x="29" y="26" width="19.666666666666671" height="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrow.left" catalog="system"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xxk-tJ-vN8" userLabel="buttonStackView">
-                                <rect key="frame" x="304" y="26" width="55" height="22.333333333333332"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xxk-tJ-vN8" userLabel="buttonStackView">
+                                <rect key="frame" x="304" y="26" width="55" height="22.333333333333329"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-rA-kPT">
                                         <rect key="frame" x="0.0" y="0.0" width="19" height="22.333333333333332"/>
@@ -158,8 +158,8 @@ label.layer.masksToBounds</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="League" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-sp-gzW">
-                                <rect key="frame" x="171.33333333333334" y="38" width="47.333333333333343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-sp-gzW">
+                                <rect key="frame" x="171.33333333333334" y="38" width="47.333333333333343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -200,18 +200,21 @@ label.layer.masksToBounds</string>
                             <constraint firstItem="FbN-id-jGb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6W3-hh-hCi"/>
                             <constraint firstItem="FbN-id-jGb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7b6-YM-tlR"/>
                             <constraint firstItem="uWF-IF-NTK" firstAttribute="centerY" secondItem="FbN-id-jGb" secondAttribute="centerY" id="Cd1-H2-E0K"/>
+                            <constraint firstItem="Fh8-L7-RhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-18" id="FJV-3v-Xhw"/>
                             <constraint firstItem="FbN-id-jGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GxF-bH-vBd"/>
                             <constraint firstItem="FeC-ck-9LH" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="trailing" multiplier="0.75" id="HZU-ET-HZp"/>
                             <constraint firstItem="cp2-li-9Y9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JVH-1u-1TU"/>
+                            <constraint firstItem="nNz-sp-gzW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="38" id="ODF-0U-8Bt"/>
                             <constraint firstItem="cp2-li-9Y9" firstAttribute="top" secondItem="FbN-id-jGb" secondAttribute="bottom" id="OjH-Wj-BI2"/>
-                            <constraint firstItem="Fh8-L7-RhP" firstAttribute="leading" secondItem="FbN-id-jGb" secondAttribute="leading" id="UnG-if-bYf"/>
+                            <constraint firstItem="Fh8-L7-RhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="UnG-if-bYf"/>
                             <constraint firstItem="M9M-HT-5ch" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="trailing" multiplier="0.25" id="XHI-gu-tli"/>
+                            <constraint firstItem="Xxk-tJ-vN8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-18" id="XjT-7B-rCk"/>
                             <constraint firstItem="FeC-ck-9LH" firstAttribute="centerY" secondItem="FbN-id-jGb" secondAttribute="centerY" id="fiF-rY-5DA"/>
                             <constraint firstItem="FEG-kM-Yxi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mav-L8-CDp"/>
                             <constraint firstItem="nNz-sp-gzW" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="centerX" id="n8t-Pd-Raw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cp2-li-9Y9" secondAttribute="trailing" id="nbW-sn-Z8s"/>
                             <constraint firstItem="uWF-IF-NTK" firstAttribute="centerX" secondItem="FbN-id-jGb" secondAttribute="centerX" id="rXb-Ml-EJL"/>
-                            <constraint firstItem="Xxk-tJ-vN8" firstAttribute="trailing" secondItem="FbN-id-jGb" secondAttribute="trailing" id="rcu-tS-pfA"/>
+                            <constraint firstItem="Xxk-tJ-vN8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-31" id="rcu-tS-pfA"/>
                             <constraint firstItem="FEG-kM-Yxi" firstAttribute="bottom" secondItem="FbN-id-jGb" secondAttribute="bottom" id="uKp-IJ-l9d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FEG-kM-Yxi" secondAttribute="trailing" id="ukh-pp-Ahn"/>
                             <constraint firstItem="M9M-HT-5ch" firstAttribute="centerY" secondItem="FbN-id-jGb" secondAttribute="centerY" id="y68-fT-dTA"/>
