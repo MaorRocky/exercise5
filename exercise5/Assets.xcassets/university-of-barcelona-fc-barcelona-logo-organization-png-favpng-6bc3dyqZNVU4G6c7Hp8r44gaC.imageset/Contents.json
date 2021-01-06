@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "university-of-barcelona-fc-barcelona-logo-organization-png-favpng-6bc3dyqZNVU4G6c7Hp8r44gaC.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "university-of-barcelona-fc-barcelona-logo-organization-png-favpng-6bc3dyqZNVU4G6c7Hp8r44gaC@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "university-of-barcelona-fc-barcelona-logo-organization-png-favpng-6bc3dyqZNVU4G6c7Hp8r44gaC@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
